@@ -16,7 +16,7 @@ module.exports = function(controller) {
             "isModerator": true
           };
           var newUser = response.text;
-          convo.say("Añadiendo al espacio el usuario" + "**" + newUser + "**...");
+          convo.say("Añadiendo algo espacio el usuario" + "**" + newUser + "**...");
           async.waterfall([
             function(callback) {
               spark.memberships.create(membershipParameters, function(err, response) {
