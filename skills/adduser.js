@@ -25,6 +25,9 @@ module.exports = function(controller) {
                   console.log(err);
                   convo.say("No hemos podido crear el usuario: " + newUser);
                   convo.next();
+                } else {
+                  convo.say("Hemos creado el usuario " + newUser);
+                  convo.next();
                 }
               });
             }
