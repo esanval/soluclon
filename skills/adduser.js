@@ -1,5 +1,5 @@
 module.exports = function(controller) {
-  controller.hears(["room"], 'direct_message,direct_mention', function(bot, message) {
+  controller.hears(["añadir"], 'direct_message,direct_mention', function(bot, message) {
     var email = message.user;
     var CiscoSpark = require('node-ciscospark');
     var async = require('async');
